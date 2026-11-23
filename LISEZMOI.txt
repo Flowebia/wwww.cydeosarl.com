@@ -1,0 +1,9 @@
+CYDEO SARL - site web (dossier à envoyer à la racine de votre hébergement)
+
+1. Envoyez TOUS les fichiers (y compris .htaccess) dans le dossier public (public_html) de www.cydeosarl.com.
+2. Activez le certificat SSL/HTTPS chez votre hébergeur (gratuit : Let's Encrypt), puis testez https://www.cydeosarl.com
+3. .htaccess force le HTTPS et le www (Apache). Avec Nginx, Cloudflare, Netlify ou Vercel, activez plutôt l'option "Forcer HTTPS" de la plateforme et supprimez .htaccess. Si le site boucle (redirections infinies derrière Cloudflare), réglez le SSL sur "Complet (strict)".
+4. Dans la Google Search Console, ajoutez le site puis soumettez https://www.cydeosarl.com/sitemap.xml
+5. À compléter : le nom de l'hébergeur dans conditions-generales.html (section 1, "à renseigner").
+6. Le formulaire de contact ouvre la messagerie du visiteur (mailto). Aucune clé secrète n'est présente dans le site. Pour un envoi direct depuis le site, il faudra un petit service côté serveur : ne jamais mettre de clé API dans les fichiers du site.
+7. Si vous ajoutez plus tard un outil de mesure d'audience ou de publicité, ne le chargez qu'après un clic sur "Accepter" du bandeau (valeur "yes" dans localStorage "cydeo-consent").
